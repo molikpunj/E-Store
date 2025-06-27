@@ -1,0 +1,43 @@
+<html>
+    <link rel = "stylesheet" href="shoppingcartpage.css">
+    <head>
+        <title>Shopping Cart - Thriller</title>
+    </head>
+    <body>
+         <h1>Your Shopping Cart</h1>
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+        </tr>
+        <tr>
+            <td>Thriller Sneaker X1</td>
+            <td>$80</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$80</td>
+            <td><button class="remove-btn">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Thriller Runner Pro</td>
+            <td>$95</td>
+            <td><input type="number" value="2" min="1"></td>
+            <td>$190</td>
+            <td><button class="remove-btn">Remove</button></td>
+        </tr>
+    </table>
+     <div class="shipping-form">
+        <h3>Estimate Shipping</h3>
+        <input type="text" placeholder="Enter ZIP/Postal Code">
+        <button>Estimate</button>
+    </div>
+
+    <div>
+        <h3>Grand Total: $270</h3>
+        <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+    </body>
+</html>
