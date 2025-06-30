@@ -1,41 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Thriller Store - Login / Signup</title>
+    <meta charset="UTF-8">
+    <title>Thriller Store - Login/Signup</title>
+    <link rel="stylesheet" href="usersignup.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Welcome to Thriller Shoes</h1>
 
-  <h1>Welcome to Thriller</h1>
-  <p>Please login or create an account to continue.</p>
+        <div class="form-container">
+            <form class="login-form">
+                <h2>Login</h2>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+                
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+            </form>
 
-  <h2>Login</h2>
-  <form action="/login" method="post">
-    <label for="login-email">Email:</label><br>
-    <input type="email" id="login-email" name="email" required><br><br>
+            <form class="signup-form">
+                <h2>Signup</h2>
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
 
-    <label for="login-password">Password:</label><br>
-    <input type="password" id="login-password" name="password" required><br><br>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
 
-    <input type="submit" value="Login">
-  </form>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
 
-  <hr>
-
-  <h2>Sign Up</h2>
-  <form action="/signup" method="post">
-    <label for="signup-name">Full Name:</label><br>
-    <input type="text" id="signup-name" name="name" required><br><br>
-
-    <label for="signup-email">Email:</label><br>
-    <input type="email" id="signup-email" name="email" required><br><br>
-
-    <label for="signup-password">Password:</label><br>
-    <input type="password" id="signup-password" name="password" required><br><br>
-
-    <input type="submit" value="Sign Up">
-  </form>
-
-  <p><small>*Note: Thriller is a fictional store created for illustrative purposes.*</small></p>
-
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
